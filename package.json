@@ -1,5 +1,15 @@
 {
+  "name": "kv6012-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
-    "mssql": "^11.0.1"
+    "express": "...",
+    "mssql": "...",
+    "axios": "...",
+    "morgan": "...",
+    "dotenv": "..."
   }
 }
