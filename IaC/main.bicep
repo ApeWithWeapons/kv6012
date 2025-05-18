@@ -1,4 +1,5 @@
 // IaC/main.bicep
+
 targetScope = 'subscription'
 
 @description('Location for all resources')
@@ -21,11 +22,7 @@ var sqlName    = toLower('${prefix}sql')
 var dbName     = '${prefix}db'
 var vaultName  = toLower('${prefix}kv')
 
-// Create Resource Group
-resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
-  name: rgName
-  location: location
-}
+
 
 // App Service Plan
 resource plan 'Microsoft.Web/serverfarms@2021-02-01' = {
