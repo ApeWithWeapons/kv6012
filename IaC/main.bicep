@@ -1,4 +1,5 @@
 // IaC/main.bicep
+targetScope = 'subscription'
 
 @description('Location for all resources')
 param location string = 'UK South'
